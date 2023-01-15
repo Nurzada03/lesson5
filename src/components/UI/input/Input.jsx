@@ -1,11 +1,11 @@
 import React from "react";
-import "./Input.css";
+import styled from  "./Input.module.css";
 
 const Input = ({ inputType, id, labelName, value, onChange }) => {
   return (
     <form>
       <div>
-        <label className="labelStyle" htmlFor={id}>
+        <label className={styled.labelStyle} htmlFor={id}>
           {labelName}
         </label>
         <br />
@@ -13,11 +13,10 @@ const Input = ({ inputType, id, labelName, value, onChange }) => {
           value={value}
           onChange={onChange}
           type={inputType}
-          className="inputForm"
+          className={styled.inputForm}
           id={id}
         />
       </div>
-      <div></div>
     </form>
   );
 };

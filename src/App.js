@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import styles from "./App.module.css";
 import AddUser from "./components/AddUser/AddUser";
 import UserList from "./components/UserList/UserList";
 
@@ -32,7 +32,6 @@ const dataList = [
 
 function App() {
   const [userList, setuserList] = useState(dataList);
-  console.log(userList);
 
   const addNewExpenseHadler = (data) => {
     const upUserList = [...userList];
@@ -45,12 +44,11 @@ function App() {
   });
 
   return (
-    <div className="App">
-      <div className="form-container">
+    <div className={styles.App}>
+      <div className={styles.formContainer}>
         <AddUser onNewList={addNewExpenseHadler} />
       </div>
-      <div className="list-container">
-       
+      <div className={styles.listContainer}>
         <UserList expenses={userList} />
       </div>
     </div>

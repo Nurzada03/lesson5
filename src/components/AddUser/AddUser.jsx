@@ -11,7 +11,6 @@ const AddUser = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
     const UserList = {
       name,
       age,

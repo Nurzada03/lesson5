@@ -11,7 +11,7 @@
   margin: 50px;
 }
 
-.form-container {
+.formContainer {
   width: 50%;
   padding: 30px;
   background-color: #05020a;
@@ -19,14 +19,14 @@
 
   margin-bottom: 30px;
 }
-.list-container {
+.listContainer {
   width: 50%;
   padding: 30px;
   background-color: #05020a;
   border-radius: 15px;
 }
 
-.form-container:hover {
+.formContainer:hover {
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,
@@ -34,7 +34,7 @@
     rgba(75, 214, 184, 1) 73%
   );
 }
-.list-container:hover {
+.listContainer:hover {
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,

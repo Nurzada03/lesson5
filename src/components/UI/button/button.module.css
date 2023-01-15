@@ -1,4 +1,4 @@
-.form-btn {
+.form_Btn {
   width: 100px;
   padding: 15px;
   background-color: rgb(22, 9, 90);
@@ -10,7 +10,7 @@
   font-size: 20px;
 }
 
-.form-btn:hover {
+.form_Btn:hover {
   font-style: italic;
   background-color: cornsilk;
   color: midnightblue;

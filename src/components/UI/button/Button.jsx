@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./button.css";
+import styled from  "./button.module.css";
 const Button = ({ onClick, disabled, title }) => {
   return (
-    <button onClick={onClick} disabled={disabled} className="form-btn">
+    <button onClick={onClick} disabled={disabled} className={styled.form_Btn}>
       {title}
     </button>
   );
